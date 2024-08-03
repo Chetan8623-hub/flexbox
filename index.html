@@ -1,10 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Document</title>
+    <title>Flexboxes</title>
+<style>
+.cardscontainer{
+    background-color: aqua;
+    width: 400px;
+    height: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:end;
+    }
+
+.card{
+    width: 150px;
+    height: 240px;
+    border: 4px double black;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: antiquewhite;}
+
+.cardimg{
+    width: 100%;
+    height: 100px;
+    border-radius: 7px 7px 0 0;}
+
+.cardtitle{
+    text-align: center;
+    margin: 0;
+    padding: 0;}
+    
+    .btn {
+        background-color: #ff9933;
+        padding: 5px 20px;
+        border-radius: 30px;
+        border: none;
+        display: block;
+        margin: 10px auto;}
+
+</style>
 </head>
 <body>
-    <h1>hi</h1>
-    <h2>cj</h2>
+    <div class="cardscontainer">
+
+        <div class="card">
+            <img src="15PROMAX.jfif" class="cardimg">
+            <h4>IPHONE 15</h4>
+            <p><b>Price:</b>110000/-</p>
+            <button class="btn">Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="ONEPLUS.jfif" class="cardimg">
+            <h4>ONE PLUS 12R</h4>
+            <p><b>Price:</b>40000/-</p>
+            <button class="btn">Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="OPPO.jpg" class="cardimg">
+            <h4>OPPO RENO 10</h4>
+            <p><b>Price:</b>35000/-</p>
+            <button class="btn">Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="POCO.png" class="cardimg">
+            <h4>POCO M2</h4>
+            <p><b>Price:</b>15000/-</p>
+            <button class="btn">Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="VIVO.jfif" class="cardimg">
+            <h4>VIVO Y100 </h4>
+            <p><b>Price:</b>25000/-</p>
+            <button class="btn">Add to cart</button>
+        </div>
+
+    </div>
 </body>
 </html>
