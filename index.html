@@ -3,16 +3,69 @@
 <head>
     <title>Flexboxes</title>
 <style>
-.cardscontainer{
+.cardscontainer1{
     background-color: aqua;
-    width: 400px;
-    height: 1500px;
+    height: 450px;
+    border: 4px double black;
     display: flex;
     flex-wrap: wrap;
+    flex-direction:row;
+    justify-content:start; 
+    align-items:center;}
+
+.cardscontainer2{
+    background-color: rgb(58, 236, 112);
+    border: 4px double black;
+    display: flex; 
+    flex-wrap: wrap;
     flex-direction:column;
-    justify-content:space-between;
-    align-items:end;
-    }
+    justify-content:end;
+    align-items:end;} 
+
+.cardscontainer3 {
+    display: flex;
+    background-color: rgb(238, 235, 82);
+    border: 4px double black;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;}
+
+.cardscontainer4 {
+    display: flex;
+    background-color: rgb(255, 92, 201);
+    flex-wrap: wrap;
+    border: 4px double black;
+    flex-direction: column-reverse;
+    justify-content: end;
+    align-items: start;}
+
+.cardscontainer5 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(175, 108, 238);
+    border: 4px double black;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: start;}
+
+.cardscontainer6 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(196, 57, 57);
+    border: 4px double black;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: end;}
+
+.cardscontainer7 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(104, 194, 69);
+    border: 4px double black;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;}
 
 .card{
     width: 150px;
@@ -31,8 +84,12 @@
     text-align: center;
     margin: 0;
     padding: 0;}
+
+h1{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;}
     
-    .btn {
+.btn {
         background-color: #ff9933;
         padding: 5px 20px;
         border-radius: 30px;
@@ -43,39 +100,250 @@
 </style>
 </head>
 <body>
-    <div class="cardscontainer">
-
+    <h1>Flex Direction:column &  justify-content: End & align-items: end</h1>
+    <div class="cardscontainer2">
         <div class="card">
-            <img src="15PROMAX.jfif" class="cardimg">
-            <h4>IPHONE 15</h4>
-            <p><b>Price:</b>110000/-</p>
-            <button class="btn">Add to cart</button>
+                <img src="15PROMAX.jfif" class="cardimg">
+                <h4>IPHONE 15</h4>
+                <p><b>Price:</b>110000/-</p>
+                <button class="btn">Add to cart</button>
         </div>
         <div class="card">
-            <img src="ONEPLUS.jfif" class="cardimg">
-            <h4>ONE PLUS 12R</h4>
-            <p><b>Price:</b>40000/-</p>
-            <button class="btn">Add to cart</button>
+                <img src="ONEPLUS.jfif" class="cardimg">
+                <h4>ONE PLUS 12R</h4>
+                <p><b>Price:</b>40000/-</p>
+                <button class="btn">Add to cart</button>
         </div>
         <div class="card">
-            <img src="OPPO.jpg" class="cardimg">
-            <h4>OPPO RENO 10</h4>
-            <p><b>Price:</b>35000/-</p>
-            <button class="btn">Add to cart</button>
+                <img src="OPPO.jpg" class="cardimg">
+                <h4>OPPO RENO 10</h4>
+                <p><b>Price:</b>35000/-</p>
+                <button class="btn">Add to cart</button>
         </div>
         <div class="card">
-            <img src="POCO.png" class="cardimg">
-            <h4>POCO M2</h4>
-            <p><b>Price:</b>15000/-</p>
-            <button class="btn">Add to cart</button>
+                <img src="POCO.png" class="cardimg">
+                <h4>POCO M2</h4>
+                <p><b>Price:</b>15000/-</p>
+                <button class="btn">Add to cart</button>
         </div>
         <div class="card">
-            <img src="VIVO.jfif" class="cardimg">
-            <h4>VIVO Y100 </h4>
-            <p><b>Price:</b>25000/-</p>
-            <button class="btn">Add to cart</button>
+                <img src="VIVO.jfif" class="cardimg">
+                <h4>VIVO Y100 </h4>
+                <p><b>Price:</b>25000/-</p>
+                <button class="btn">Add to cart</button>
         </div>
-
     </div>
+
+    <h1>Flex Direction:row-reverse &  justify-content: center & align-items: center</h1>
+    <div class="cardscontainer3">
+
+        <div class="card">
+                <img src="15PROMAX.jfif" class="cardimg">
+                <h4>IPHONE 15</h4>
+                <p><b>Price:</b>110000/-</p>
+                <button class="btn">Add to cart</button>
+        </div>
+        <div class="card">
+                <img src="ONEPLUS.jfif" class="cardimg">
+                <h4>ONE PLUS 12R</h4>
+                <p><b>Price:</b>40000/-</p>
+                <button class="btn">Add to cart</button>
+        </div>
+        <div class="card">
+                <img src="OPPO.jpg" class="cardimg">
+                <h4>OPPO RENO 10</h4>
+                <p><b>Price:</b>35000/-</p>
+                <button class="btn">Add to cart</button>
+        </div>
+        <div class="card">
+                <img src="POCO.png" class="cardimg">
+                <h4>POCO M2</h4>
+                <p><b>Price:</b>15000/-</p>
+                <button class="btn">Add to cart</button>
+        </div>
+        <div class="card">
+                <img src="VIVO.jfif" class="cardimg">
+                <h4>VIVO Y100 </h4>
+                <p><b>Price:</b>25000/-</p>
+                <button class="btn">Add to cart</button>
+        </div>
+    </div>
+
+    <h1>Flex Direction:column-reverse & justify-content: end & align-items: start</h1>
+    <div class="cardscontainer4">
+
+        <div class="card">
+                        <img src="15PROMAX.jfif" class="cardimg">
+                        <h4>IPHONE 15</h4>
+                        <p><b>Price:</b>110000/-</p>
+                        <button class="btn">Add to cart</button>
+        </div>
+        <div class="card">
+                        <img src="ONEPLUS.jfif" class="cardimg">
+                        <h4>ONE PLUS 12R</h4>
+                        <p><b>Price:</b>40000/-</p>
+                        <button class="btn">Add to cart</button>
+        </div>
+        <div class="card">
+                        <img src="OPPO.jpg" class="cardimg">
+                        <h4>OPPO RENO 10</h4>
+                        <p><b>Price:</b>35000/-</p>
+                        <button class="btn">Add to cart</button>
+        </div>
+        <div class="card">
+                        <img src="POCO.png" class="cardimg">
+                        <h4>POCO M2</h4>
+                        <p><b>Price:</b>15000/-</p>
+                        <button class="btn">Add to cart</button>
+        </div>
+        <div class="card">
+                        <img src="VIVO.jfif" class="cardimg">
+                        <h4>VIVO Y100 </h4>
+                        <p><b>Price:</b>25000/-</p>
+                        <button class="btn">Add to cart</button>
+        </div>           
+    </div>
+
+    <h1>  flex-direction: row-reverse & justify-content: space-evenly & align-items: start</h1>
+            <div class="cardscontainer5">
+
+                <div class="card">
+                            <img src="15PROMAX.jfif" class="cardimg">
+                            <h4>IPHONE 15</h4>
+                            <p><b>Price:</b>110000/-</p>
+                            <button class="btn">Add to cart</button>
+                </div>
+                <div class="card">
+                            <img src="ONEPLUS.jfif" class="cardimg">
+                            <h4>ONE PLUS 12R</h4>
+                            <p><b>Price:</b>40000/-</p>
+                            <button class="btn">Add to cart</button>
+                </div>
+                <div class="card">
+                            <img src="OPPO.jpg" class="cardimg">
+                            <h4>OPPO RENO 10</h4>
+                            <p><b>Price:</b>35000/-</p>
+                            <button class="btn">Add to cart</button>
+                </div>
+                <div class="card">
+                            <img src="POCO.png" class="cardimg">
+                            <h4>POCO M2</h4>
+                            <p><b>Price:</b>15000/-</p>
+                            <button class="btn">Add to cart</button>
+                </div>
+                <div class="card">
+                            <img src="VIVO.jfif" class="cardimg">
+                            <h4>VIVO Y100 </h4>
+                            <p><b>Price:</b>25000/-</p>
+                            <button class="btn">Add to cart</button>
+                </div>
+            </div>
+        
+    <h1>Flex Direction:Row & Justify content:start & align-items: center</h1>
+            <div class="cardscontainer1">
+                <div class="card">
+                    <img src="15PROMAX.jfif" class="cardimg">
+                    <h4>IPHONE 15</h4>
+                    <p><b>Price:</b>110000/-</p>
+                    <button class="btn">Add to cart</button>
+                </div>
+                <div class="card">
+                    <img src="ONEPLUS.jfif" class="cardimg">
+                    <h4>ONE PLUS 12R</h4>
+                    <p><b>Price:</b>40000/-</p>
+                    <button class="btn">Add to cart</button>
+                </div>
+                <div class="card">
+                    <img src="OPPO.jpg" class="cardimg">
+                    <h4>OPPO RENO 10</h4>
+                    <p><b>Price:</b>35000/-</p>
+                    <button class="btn">Add to cart</button>
+                </div>
+                <div class="card">
+                    <img src="POCO.png" class="cardimg">
+                    <h4>POCO M2</h4>
+                    <p><b>Price:</b>15000/-</p>
+                    <button class="btn">Add to cart</button>
+                </div>
+                <div class="card">
+                    <img src="VIVO.jfif" class="cardimg">
+                    <h4>VIVO Y100 </h4>
+                    <p><b>Price:</b>25000/-</p>
+                    <button class="btn">Add to cart</button>
+                </div>
+            </div>
+
+    <h1> flex-direction: row-reverse & justify-content: space-between & align-items: end </h1>
+             <div class="cardscontainer6">
+
+                <div class="card">
+                                <img src="15PROMAX.jfif" class="cardimg">
+                                <h4>IPHONE 15</h4>
+                                <p><b>Price:</b>110000/-</p>
+                                <button class="btn">Add to cart</button>
+                            </div>
+                            <div class="card">
+                                <img src="ONEPLUS.jfif" class="cardimg">
+                                <h4>ONE PLUS 12R</h4>
+                                <p><b>Price:</b>40000/-</p>
+                                <button class="btn">Add to cart</button>
+                            </div>
+                            <div class="card">
+                                <img src="OPPO.jpg" class="cardimg">
+                                <h4>OPPO RENO 10</h4>
+                                <p><b>Price:</b>35000/-</p>
+                                <button class="btn">Add to cart</button>
+                            </div>
+                            <div class="card">
+                                <img src="POCO.png" class="cardimg">
+                                <h4>POCO M2</h4>
+                                <p><b>Price:</b>15000/-</p>
+                                <button class="btn">Add to cart</button>
+                            </div>
+                            <div class="card">
+                                <img src="VIVO.jfif" class="cardimg">
+                                <h4>VIVO Y100 </h4>
+                                <p><b>Price:</b>25000/-</p>
+                                <button class="btn">Add to cart</button>
+                            </div>
+                    </div>
+
+
+         <h1>  flex-direction: row-reverse & justify-content: space-around & align-items: center </h1>
+                            <div class="cardscontainer7">
+
+                                <div class="card">
+                                    <img src="15PROMAX.jfif" class="cardimg">
+                                    <h4>IPHONE 15</h4>
+                                    <p><b>Price:</b>110000/-</p>
+                                    <button class="btn">Add to cart</button>
+                                </div>
+                                <div class="card">
+                                    <img src="ONEPLUS.jfif" class="cardimg">
+                                    <h4>ONE PLUS 12R</h4>
+                                    <p><b>Price:</b>40000/-</p>
+                                    <button class="btn">Add to cart</button>
+                                </div>
+                                <div class="card">
+                                    <img src="OPPO.jpg" class="cardimg">
+                                    <h4>OPPO RENO 10</h4>
+                                    <p><b>Price:</b>35000/-</p>
+                                    <button class="btn">Add to cart</button>
+                                </div>
+                                <div class="card">
+                                    <img src="POCO.png" class="cardimg">
+                                    <h4>POCO M2</h4>
+                                    <p><b>Price:</b>15000/-</p>
+                                    <button class="btn">Add to cart</button>
+                                </div>
+                                <div class="card">
+                                    <img src="VIVO.jfif" class="cardimg">
+                                    <h4>VIVO Y100 </h4>
+                                    <p><b>Price:</b>25000/-</p>
+                                    <button class="btn">Add to cart</button>
+                                </div>
+                            </div>
+                        
+    
 </body>
 </html>
